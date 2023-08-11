@@ -9,10 +9,15 @@
   in {
     devShells.x86_64-linux.default = pkgs.mkShell {
       buildInputs = with pkgs; [
+        svls # lsp for SystemVerilog
+        verible # formatter
+        verilog # icarus
+        gtkwave
+        verilator
         yosys
         arachne-pnr
-        icestorm
         nextpnr
+        icestorm
       ];
     };
   };
