@@ -1,7 +1,17 @@
 # getting start
-## Icarus
+## environment
+`nix develop`
+## icarus
 ```
-iverilog led.v led_tb.v
-./a.out
+make test
 gtkwave wave.vcd
 ```
+## ice-sugar
+```
+make build
+make prog_flash
+```
+## nanoDLA
+`pulseview`
+## CH347
+`sudo python ch347/test.py`
